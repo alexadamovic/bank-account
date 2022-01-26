@@ -7,4 +7,12 @@ myAccount;
 Expected Output:
 BankAccount {balance: 500}
 
-Test: It should
+Describe: BankAccount.prototype.deposit()
+
+Test: It should add an amount to the specific BankAccount object's property balance
+Code:
+let myAccount = new BankAccount(500)
+myAccount.deposit(400)
+myAccount;
+Expected Output:
+BankAccount {balance: 900}
