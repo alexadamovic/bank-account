@@ -13,4 +13,5 @@ BankAccount.prototype.withdrawal = function(moneyOut) {
 $(document).ready(function() {
   $("form#bank").submit(function(event) {
     event.preventDefault();
-    let 
+    const initDeposit = parseInt($("number#initial-deposit").val());
+    let inputtedDeposit = parseInt($("number#deposit").val());
